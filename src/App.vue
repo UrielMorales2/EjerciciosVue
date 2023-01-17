@@ -1,27 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <!-- <conuter_option></conuter_option>
+  <contadorComposition></contadorComposition>
+  <h1>Listado de Post</h1>
+  <PostContainer></PostContainer> -->
+  <directivasSelectivas></directivasSelectivas>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
-export default defineComponent({
+<script lang="ts">
+import conuter_option from './components/ContadorOption.vue'
+import PostContainer from './components/PostContainer.vue';
+import contadorComposition from './components/counterComposition.vue';
+import directivasSelectivas from './components/directivasSelectivas.vue';
+export default ({
   name: 'App',
   components: {
-    HelloWorld
+    // PostContainer,
+    // conuter_option, 
+    // contadorComposition,
+    directivasSelectivas
   }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+h1{
+    color: green;
 }
 </style>
